@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+
+{% load bootstrap4 %} 
+{% block content%}
+<div class="container">
+
+
+{%if businesses %}
+<br>
+<h3>Businesses</h3>
+
+{%for business in businesses%}
+<div class="row">
+    <div class="col-sm-6 mt-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> Name :{{business.name}}</h5>
+          <p class="card-text"> Description: {{business.description}}</p>
+          <p class="card-text">Email: {{business.email}}</p>
+
+          <p class="card-text text-muted">{{business.created | date}}</p>
+
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+{%endfor%}
+{%else%}
+<p>No Search term</p>
+{%endif%}
+
+</div>      
+{% endblock %}

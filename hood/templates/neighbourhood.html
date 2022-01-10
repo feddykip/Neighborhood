@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container">
+    <form action="" method="post" enctype="multipart/form-data" novalidate>
+        {% csrf_token %}
+        {{ form|crispy }}
+        <a href="{%url 'index' %}">
+        <button class="btn btn-sm  btn btn-outline-info">Add Hood</button>
+        </a>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{%extends 'base.html'%}
+
+{% load bootstrap4 %} 
+{% block content%}
+<div class="container">
+
+
+{%if posts %}
+{%for post in posts%}
+<div class="card mt-5" style="width: 18rem;">
+    <h5 class="card-title">content: {{post.content}}
+    </h5>
+
+    <img class="card-img-top" src="{{post.image.url}}" style="width:285px; height:240px;" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-muted">Comment: 
+          <br>{{post.comments}}</h5>
+      <!-- <p class="card-text text-muted">{{post.neighbourhood}}</p> -->
+     
+    <a href="{%url 'delete' post.id %}"><button class=" btn-outline-danger">delete</button></a>
+    <a href="{%url 'update_post' post.pk %}"><button class=" btn-outline-info">update</button></a>
+
+    </div>
+  </div>
+
+{%endfor%}
+
+
+{%endif%}
+
+</div>      
+{% endblock %}

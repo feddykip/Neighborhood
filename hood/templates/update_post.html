@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load bootstrap4 %} 
+
+{% block content%}
+<div class="container">
+       <h2 class="display-5 text-center font-weight-bold">Update your neighbourhood </h2>
+    
+        
+<div class="container">
+  <div class="row">
+      <!-- Empty div -->
+      <div class="col-lg-3"></div>
+
+      <div class="col-lg-6 pt-2 ">
+            <form  action="" method="post" enctype="multipart/form-data">
+              {%csrf_token%}
+
+              {% bootstrap_form form %}
+              <input type="submit" class="btn btn-outline-info btn-lg font-weight-bold" value="SUBMIT">
+            </form>
+      </div>
+
+      <div class="col-lg-3"></div>
+    
+  </div>
+</div>
+</div>
+{% endblock %}
