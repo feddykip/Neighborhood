@@ -9,6 +9,14 @@ This is a django web application for a neighbourhood.It allows occupants of a ne
 - Create posts that will be seen by eveyone else and Find other different posts made in the neighborhood.
 - Create neighbourhoods and also Find other neighbourhoods created.
 - Post a businesses details and location and also find other businesses in the neighbourhood.
-- log out
+- log out of the web application
 
-## 
+## Technologies Used
+- HTML
+- CSS
+- Bootstrap
+- Python
+- Django
+- Heroku (deployment)
+
+##
