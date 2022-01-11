@@ -19,4 +19,9 @@ This is a django web application for a neighbourhood.It allows occupants of a ne
 - Django
 - Heroku (deployment)
 
-##
+## Setup
+- Clone the App `git clone https://github.com/feddykip/Neighborhood.git
+- Install all the dependencies as stated on the requirements file
+- Activate the virtual environment on terminal and run server
+
+
