@@ -24,4 +24,4 @@ This is a django web application for a neighbourhood.It allows occupants of a ne
 - Install all the dependencies as stated on the requirements file
 - Activate the virtual environment on terminal and run server
 
-
+##
