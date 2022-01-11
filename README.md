@@ -27,5 +27,8 @@ This is a django web application for a neighbourhood.It allows occupants of a ne
 ## Live site
 View live site [here](https://jirani544.herokuapp.com/)
 
+## License
+Licensed under the [MIT License](LICENSE)
+
 
 
